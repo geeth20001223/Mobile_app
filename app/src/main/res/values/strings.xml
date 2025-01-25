@@ -18,4 +18,26 @@
     <string name="Full_Name">Full Name</string>
     <string name="Email">E-mail</string>
     <string name="password">Password</string>
+    <string name="SignUp">Sign Up</string>
+    <string name="login">Login</string>
+    <string name="health_tracker">Health Tracker</string>
+    <string name="kick_tracker">Kick Tracker</string>
+    <string name="educational_hub">Educational Hub</string>
+    <string name="activity">Activity</string>
+    <string name="reminders">Reminders</string>
+    <string name="mental_health">Mental Health</string>
+    <string name="emergency_info">Emergency Info</string>
+    <string name="baby_growth_your_baby_is_the_size_of_a_mango_today">Baby Growth: Your baby is the size of a mango today!</string>
+    <string name="clock_icon">Clock Icon</string>
+    <string name="due_date_30_days_left">Due Date: 30 days left</string>
+    <string name="current_week_20">Current Week: 20</string>
+    <string name="daily_tips_stay_hydrated_and_exercise_regularly">Daily Tips: Stay hydrated and exercise regularly.</string>
+    <string name="emergency_information">Emergency Information</string>
+    <string name="doctor_image">Doctor Image</string>
+    <string name="dr_john_doe">Dr. John Doe</string>
+    <string name="nearest_hospital_city_care_hospital">Nearest Hospital: City Care Hospital</string>
+    <string name="hospitle_image">Hospitle Image</string>
+    <string name="location_123_health_street_downtown">Location: 123 Health Street, Downtown</string>
+    <string name="call_doctor">Call Doctor</string>
+    <string name="call_hospital">Call Hospital</string>
 </resources>

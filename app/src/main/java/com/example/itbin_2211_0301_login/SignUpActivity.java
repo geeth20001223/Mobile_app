@@ -6,8 +6,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+import android.view.*;
+import android.widget.*;
+import android.os.*;
 
-public class SignUpActivity extends Activity {
+import androidx.appcompat.app.AppCompatActivity;
+
+
+public class SignUpActivity extends AppCompatActivity {
 
     private EditText usernameEditText;
     private EditText fullNameEditText;
