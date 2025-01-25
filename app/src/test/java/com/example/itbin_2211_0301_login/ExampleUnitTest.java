@@ -1,4 +1,4 @@
-package com.example.pregnancy_app;
+package com.example.itbin_2211_0301_login;
 
 import org.junit.Test;
 

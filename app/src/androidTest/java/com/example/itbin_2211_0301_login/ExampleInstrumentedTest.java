@@ -1,4 +1,4 @@
-package com.example.pregnancy_app;
+package com.example.itbin_2211_0301_login;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.example.pregnancy_app", appContext.getPackageName());
+        assertEquals("com.example.itbin_2211_0301_login", appContext.getPackageName());
     }
 }

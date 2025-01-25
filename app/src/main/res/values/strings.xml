@@ -1,3 +1,21 @@
 <resources>
-    <string name="app_name">Pregnancy_App</string>
+    <string name="blood_pressure_label">Blood Pressure</string>
+    <string name="body_temperature">Body Temperature</string>
+    <string name="body_temperature_hint">Enter Body Temperature</string>
+    <string name="body_Symptoms_hint">Enter Symptoms</string>
+    <string name="diastolic_pressure_hint">Diastolic</string>
+    <string name="symptoms_label">Symptoms</string>
+    <string name="systolic_hint">Systolic</string>
+    <string name="save_button_text">Save</string>
+    <string name="title_text">Collect Your Daily Health Data</string>
+    <string name="weight_label">Weight (kg):</string>
+    <string name="app_name">Your App Name</string>
+    <string name="c">© 2025</string>
+    <string name="loading_text">Loading...</string>
+    <string name="my_image_description">Image of a smiling person</string>
+    <string name="sign_up_text">Sign Up</string>
+    <string name="User_name">Username</string>
+    <string name="Full_Name">Full Name</string>
+    <string name="Email">E-mail</string>
+    <string name="password">Password</string>
 </resources>

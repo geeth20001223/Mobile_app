@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Pregnancy_App"
+rootProject.name = "ITBIN-2211-0301_login"
 include(":app")

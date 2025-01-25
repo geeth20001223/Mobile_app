@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.pregnancy_app"
+    namespace = "com.example.itbin_2211_0301_login"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.pregnancy_app"
+        applicationId = "com.example.itbin_2211_0301_login"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -26,8 +26,8 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
     }
 }
 
@@ -35,6 +35,8 @@ dependencies {
 
     implementation(libs.appcompat)
     implementation(libs.material)
+    implementation(libs.activity)
+    implementation(libs.constraintlayout)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
