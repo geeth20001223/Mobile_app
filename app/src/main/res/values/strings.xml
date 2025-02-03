@@ -40,4 +40,12 @@
     <string name="location_123_health_street_downtown">Location: 123 Health Street, Downtown</string>
     <string name="call_doctor">Call Doctor</string>
     <string name="call_hospital">Call Hospital</string>
+    <string name="week_28">Week 28</string>
+    <string name="kicks">Kicks: 0</string>
+    <string name="tap_to_record">Tap to Record Kick</string>
+    <string name="reset">Reset</string>
+    <string name="save">Save</string>
+    <string name="kicks_count">Kicks: %d</string>
+    <string name="kicks_text">Kicks: %d</string>
+    <string name="elapsed_time">Elapsed Time: %02d:%02d</string>
 </resources>
