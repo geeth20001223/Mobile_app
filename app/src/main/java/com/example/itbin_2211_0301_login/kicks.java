@@ -13,12 +13,11 @@ import java.util.Locale;
 
 public class kicks extends AppCompatActivity {
 
-    private TextView timerText;
+    private TextView timerText, kickCountText;
     private boolean isTimerRunning = false;
     private long startTime = 0;
     private final Handler timerHandler = new Handler();
-
-    private int minutes = 0, seconds = 0; // ✅ Declare minutes & seconds as class-level variables
+    private int minutes = 0, seconds = 0, kickCount = 0; // ✅ Class-level variables
 
     private final Runnable timerRunnable = new Runnable() {
         @Override
@@ -27,7 +26,7 @@ public class kicks extends AppCompatActivity {
             seconds = (int) (elapsedMillis / 1000) % 60;
             minutes = (int) (elapsedMillis / 1000) / 60;
 
-            timerText.setText(String.format(Locale.getDefault(), "Elapsed Time: %02d:%02d", minutes, seconds));
+            runOnUiThread(() -> timerText.setText(String.format(Locale.getDefault(), "Elapsed Time: %02d:%02d", minutes, seconds)));
             timerHandler.postDelayed(this, 1000);
         }
     };
@@ -37,16 +36,17 @@ public class kicks extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kicks);
 
-        TextView kickCountText = findViewById(R.id.kickCount);
-        TextView timerText = findViewById(R.id.timerText);
+        // Initialize UI elements
+        kickCountText = findViewById(R.id.kickCount);
+        timerText = findViewById(R.id.timerText);
         Button kickButton = findViewById(R.id.kickButton);
         Button resetButton = findViewById(R.id.resetButton);
         Button saveButton = findViewById(R.id.saveButton);
         Button callDoctorButton = findViewById(R.id.callDoctorButton);
+
         // Kick Button Click
         kickButton.setOnClickListener(v -> {
-            int kickCount = 0; // ✅ Local variable instead of a class field
-            kickCount++;
+            kickCount++; // ✅ Now increments correctly
             kickCountText.setText(getString(R.string.kicks_text, kickCount));
 
             if (!isTimerRunning) {
@@ -58,10 +58,11 @@ public class kicks extends AppCompatActivity {
 
         // Reset Button Click
         resetButton.setOnClickListener(v -> {
-            kickCountText.setText(getString(R.string.kicks_text, 0));
+            kickCount = 0;
+            kickCountText.setText(getString(R.string.kicks_text, kickCount));
             isTimerRunning = false;
             timerHandler.removeCallbacks(timerRunnable);
-            minutes = 0; // ✅ Reset time
+            minutes = 0;
             seconds = 0;
             timerText.setText(getString(R.string.elapsed_time, minutes, seconds));
         });

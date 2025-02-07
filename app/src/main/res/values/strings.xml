@@ -36,7 +36,7 @@
     <string name="doctor_image">Doctor Image</string>
     <string name="dr_john_doe">Dr. John Doe</string>
     <string name="nearest_hospital_city_care_hospital">Nearest Hospital: City Care Hospital</string>
-    <string name="hospitle_image">Hospitle Image</string>
+    <string name="hospitle_image">Hospital Image</string>
     <string name="location_123_health_street_downtown">Location: 123 Health Street, Downtown</string>
     <string name="call_doctor">Call Doctor</string>
     <string name="call_hospital">Call Hospital</string>
@@ -47,5 +47,21 @@
     <string name="save">Save</string>
     <string name="kicks_count">Kicks: %d</string>
     <string name="kicks_text">Kicks: %d</string>
-    <string name="elapsed_time">Elapsed Time: %02d:%02d</string>
+    <string name="elapsed_time" formatted="false">Elapsed Time: %02d:%02d</string>
+    <string name="nutrition_tips">Nutrition Tips</string>
+    <string name="mother_skincare">Mother Skincare</string>
+    <string name="yoga">Yoga</string>
+    <string name="watch_video">Watch Video</string>
+    <string name="nutrition_image_desc">Image representing nutrition tips</string>
+    <string name="skincare_image_desc">Image representing mother skincare</string>
+    <string name="yoga_image_desc">Image representing yoga for pregnancy</string>
+    <string name="daily_activities">Daily Activities</string>
+    <string name="check_water">Drank plenty of water</string>
+    <string name="check_yoga">Did some yoga</string>
+    <string name="check_healthy_food">Ate healthy food</string>
+    <string name="check_music">Listened to calm music</string>
+    <string name="check_meditation">Did meditation</string>
+    <string name="check_progress">Check Progress</string>
+    <string name="well_done">Well done dear!</string>
+    <string name="do_better">Let’s do better tomorrow!</string>
 </resources>
