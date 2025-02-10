@@ -38,8 +38,8 @@
     <!-- Week Number -->
     <ImageView
         android:id="@+id/babyImage"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="149dp"
+        android:layout_height="160dp"
         android:contentDescription="Baby Image"
         android:src="@drawable/babywomb"
         app:layout_constraintBottom_toBottomOf="parent"
