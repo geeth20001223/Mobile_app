@@ -2,19 +2,22 @@
 <project version="4">
   <component name="deploymentTargetSelector">
     <selectionStates>
-      <SelectionState runConfigName="DailyActivitiesActivity (2)">
+      <SelectionState runConfigName="ITBIN-2211-0301_login">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="DailyActivitiesActivity (3)">
+      <SelectionState runConfigName="reminder (2)">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="VideoActivity (1)">
+      <SelectionState runConfigName="reminder">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="DailyActivitiesActivity (4)">
+      <SelectionState runConfigName="reminder (1)">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="DailyActivitiesActivity">
+      <SelectionState runConfigName="reminder (3)">
+        <option name="selectionMode" value="DROPDOWN" />
+      </SelectionState>
+      <SelectionState runConfigName="reminder (4)">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>
