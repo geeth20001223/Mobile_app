@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FAFAFA">
+
+    <!-- Button to Show Nearby Hospitals -->
+    <Button
+        android:id="@+id/btnShowHospitals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#FF4081"
+        android:padding="12dp"
+        android:text="Show Nearby Hospitals"
+        android:textColor="#FFF"
+        android:textSize="18sp" />
+
+    <!-- TextView to Display Hospitals -->
+    <TextView
+        android:id="@+id/tvHospitals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hospitals:"
+        android:textSize="16sp"
+        android:textColor="#333"
+        android:padding="8dp"
+        android:visibility="gone"/>
+
+    <!-- ListView for displaying hospital names -->
+    <ListView
+        android:id="@+id/listHospitals"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:padding="8dp" />
+
+    <!-- TextView for Doctors -->
+    <TextView
+        android:id="@+id/tvDoctors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Doctors:"
+        android:textSize="16sp"
+        android:textColor="#333"
+        android:padding="8dp"
+        android:visibility="gone"/>
+
+    <!-- ListView for displaying doctors -->
+    <ListView
+        android:id="@+id/listDoctors"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"/>
+
+    <!-- Wrapper for Home Button to keep it at bottom -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/btnHome"
+            android:layout_width="227dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#8D16B1"
+            android:padding="12dp"
+            android:text="Home"
+            android:textColor="#FFF"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>
