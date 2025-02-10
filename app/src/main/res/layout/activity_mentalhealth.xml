@@ -7,63 +7,74 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".mentalhealth"
-    android:background="#ADD8E6"> <!-- Light Blue Background -->
+    android:background="@drawable/myback">
 
     <!-- Daily Meditation Title -->
+
+    <!-- Meditation Image -->
+
+    <!-- Write Journal Title -->
+
     <TextView
         android:id="@+id/meditationTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Daily Meditation"
-        android:textSize="24sp"
         android:textColor="#FF4081"
+        android:textSize="24sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="20dp" />
-
-    <!-- Meditation Image -->
-    <ImageView
-        android:id="@+id/meditationImage"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:src="@drawable/meditation_image"
-    android:contentDescription="Meditation Image"
-    android:scaleType="centerCrop"
-    app:layout_constraintTop_toBottomOf="@id/meditationTitle"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    android:layout_marginTop="16dp" />
-
-    <!-- Write Journal Title -->
-    <TextView
-        android:id="@+id/journalTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Write Your Journal"
-        android:textSize="20sp"
-        android:textColor="#000000"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/meditationImage"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="24dp" />
+        app:layout_constraintVertical_bias="0.092" />
 
     <!-- Journal Button -->
 
 
+    <ImageView
+        android:id="@+id/meditationImage"
+        android:layout_width="217dp"
+        android:layout_height="211dp"
+        android:layout_marginTop="48dp"
+        android:contentDescription="Meditation Image"
+        android:scaleType="centerCrop"
+        android:src="@drawable/meditation_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/meditationTitle"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/journalTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Write Your Journal"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/meditationImage"
+        app:layout_constraintVertical_bias="0.026" />
+
     <TextView
         android:id="@+id/textView"
-        android:layout_width="257dp"
-        android:layout_height="75dp"
+        android:layout_width="314dp"
+        android:layout_height="196dp"
         android:background="#FFFFFF"
         android:text="Text here"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.449" />
+        app:layout_constraintVertical_bias="0.523" />
 
     <Button
         android:id="@+id/button"
@@ -72,10 +83,10 @@
         android:text="OK"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.759"
+        app:layout_constraintHorizontal_bias="0.778"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.573" />
+        app:layout_constraintVertical_bias="0.675" />
 
     <TextView
         android:id="@+id/textView2"
@@ -87,20 +98,21 @@
         android:textColor="#228E04"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.794" />
+        app:layout_constraintVertical_bias="0.926" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="280dp"
-        android:layout_height="76dp"
+        android:layout_width="316dp"
+        android:layout_height="175dp"
         android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.697" />
+        app:layout_constraintVertical_bias="0.851" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

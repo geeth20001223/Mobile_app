@@ -2,19 +2,19 @@
 <project version="4">
   <component name="deploymentTargetSelector">
     <selectionStates>
-      <SelectionState runConfigName="DailyActivitiesActivity (2)">
+      <SelectionState runConfigName="healthinput">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="DailyActivitiesActivity (3)">
+      <SelectionState runConfigName="home">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="VideoActivity (1)">
+      <SelectionState runConfigName="emergencyinfo">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="DailyActivitiesActivity (4)">
+      <SelectionState runConfigName="emergencyinfo (1)">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="DailyActivitiesActivity">
+      <SelectionState runConfigName="reminder">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>

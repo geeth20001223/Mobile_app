@@ -1,57 +1,44 @@
 package com.example.itbin_2211_0301_login;
 
-import static com.example.itbin_2211_0301_login.R.id.healthTrackerButton;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+
+import com.example.itbin_2211_0301_login.DailyActivitiesActivity;
+import com.example.itbin_2211_0301_login.R;
+import com.example.itbin_2211_0301_login.VideoActivity;
+import com.example.itbin_2211_0301_login.healthinput;
+import com.example.itbin_2211_0301_login.kicks;
+import com.example.itbin_2211_0301_login.mentalhealth;
 
 public class home extends AppCompatActivity {
-
-    private Button moveinput;
-    private Button mentalinput;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_home);
 
-        moveinput=findViewById(R.id.healthTrackerButton);
-        mentalinput=findViewById(R.id.mentalHealthButton);
+        // Set Click Listeners for each image
+        findViewById(R.id.trackHealthButton).setOnClickListener(v ->
+                startActivity(new Intent(home.this, healthinput.class)));
 
+        findViewById(R.id.kickTrackerButton).setOnClickListener(v ->
+                startActivity(new Intent(home.this, kicks.class)));
 
-        moveinput.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-             Intent intent = new Intent(home.this,healthinput.class);
-             startActivity(intent);
-            }
-        });
+        findViewById(R.id.educationButton).setOnClickListener(v ->
+                startActivity(new Intent(home.this, VideoActivity.class)));
 
-        mentalinput.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(home.this, mentalhealth.class);
-                startActivity(intent);
-            }
-        });
+        findViewById(R.id.mentalHealthButton).setOnClickListener(v ->
+                startActivity(new Intent(home.this, mentalhealth.class)));
 
+        findViewById(R.id.dailyActivityButton).setOnClickListener(v ->
+                startActivity(new Intent(home.this, DailyActivitiesActivity.class)));
 
+        findViewById(R.id.remindersButton).setOnClickListener(v ->
+                startActivity(new Intent(home.this, reminder.class)));
 
-
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+        findViewById(R.id.emergencyButton).setOnClickListener(v ->
+                startActivity(new Intent(home.this, emergencyinfo.class)));
     }
 }
