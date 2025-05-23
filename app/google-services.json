@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "991959248149",
+    "project_id": "pregnancyapp-afff7",
+    "storage_bucket": "pregnancyapp-afff7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:991959248149:android:27017b04037a5177110d1c",
+        "android_client_info": {
+          "package_name": "com.example.pregnancyapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXAgbSRshdEb6UAUl347uI17NcTkFiS5k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

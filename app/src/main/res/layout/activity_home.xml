@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Greeting Text -->
+
+    <!-- Baby Size Text -->
+
+    <TextView
+        android:id="@+id/greetingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Hello Beauty!"
+        android:textAlignment="center"
+        android:textColor="#E91E63"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Baby Image -->
+
+    <!-- Week Number -->
+
+    <!-- Grid Layout for Buttons -->
+
+    <TextView
+        android:id="@+id/babySizeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Baby is the size of a mango"
+        android:textAlignment="center"
+        android:textColor="#757575"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/greetingText" />
+
+    <ImageView
+        android:id="@+id/babyImage"
+        android:layout_width="179dp"
+        android:layout_height="169dp"
+        android:layout_marginTop="100dp"
+        android:contentDescription="Baby Image"
+        android:src="@drawable/babywomb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/babySizeText" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="104dp"
+        android:columnCount="3"
+        android:rowCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- Track Health -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/trackHealthButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:contentDescription="Track Health"
+                android:src="@drawable/healthtrack1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Track Health"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <!-- Kick Tracker -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/kickTrackerButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:contentDescription="Kick Tracker"
+                android:src="@drawable/kicktrack1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kick Tracker"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <!-- Education -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/educationButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:contentDescription="Education"
+                android:src="@drawable/education1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Education"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <!-- Mental Health -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/mentalHealthButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:contentDescription="Mental Health"
+                android:src="@drawable/mentalhealth1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mental Health"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <!-- Daily Activity -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/dailyActivityButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:contentDescription="Daily Activity"
+                android:src="@drawable/activityback" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daily Activity"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <!-- Reminders -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/remindersButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:contentDescription="Reminders"
+                android:src="@drawable/reminder1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reminders"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <!-- Emergency -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/emergencyButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:contentDescription="Emergency"
+                android:src="@drawable/emergency1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Emergency"
+                android:textAlignment="center" />
+        </LinearLayout>
+    </GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
